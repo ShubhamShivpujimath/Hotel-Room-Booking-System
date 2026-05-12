@@ -114,5 +114,8 @@ Hotel_Hogwarts/
 ├── hotel.txt
 ├── customer.txt
 └── README.md
+<<<<<<< HEAD
 ```
 
+=======
+>>>>>>> 162284e18f1a161b958b5008f9140b7e07f9e4c5
