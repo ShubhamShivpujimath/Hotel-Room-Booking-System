@@ -1,121 +1,110 @@
-# 🏨 Hotel Hogwarts - Hotel Room Booking System in C
+# 🏨 Hotel Hogwarts
 
-## 📌 Project Overview
+## 📌 Description
 
-Hotel Hogwarts is a command line based Hotel Room Booking System developed using the C programming language. The application provides separate Admin and Customer modules with secure login functionality. It supports automatic room allocation, room booking, booking search, cancellation, bill calculation based on room type and category, and permanent data storage using file handling. The project was developed using core C concepts such as structures, arrays, functions, header files, string handling, and modular programming.
+Hotel Hogwarts is a **command-line hotel management application developed in C**.
 
-The system supports:
-- Customer Signup/Login
-- Admin Login
-- Automatic Room Allocation
-- Booking Management
-- Search and Cancellation
-- File Handling for Data Storage
-- Bill Calculation Based on Room Type
+The application provides separate functionality for **administrators and customers**, including account management, room selection, and customer booking operations.
 
----
+The project uses file handling to store hotel and customer information.
 
-# 🚀 Features
+## 🚀 Features
 
-## 👨‍💼 Admin Module
-- Secure Admin Login
-- View All Bookings
-- View Available Rooms
-- Search Booking
-- Cancel Booking
+* Administrator signup and login
+* Customer signup and login
+* Room selection
+* AC and Non-AC room options
+* Single and Duplex room options
+* Automatic room number allocation
+* Customer information management
+* File-based data storage
+* Menu-driven command-line interface
 
----
+## 🛠️ Technologies Used
 
-## 👤 Customer Module
-- Customer Signup
-- Customer Login
-- Book Room
-- Search Booking
-- Cancel Booking
+* **Language:** C
+* **Platform:** Linux
+* **Compiler:** GCC
+* **Storage:** File Handling
 
----
+## 🧠 Concepts Demonstrated
 
-# 🏨 Room Features
+* Structures
+* Arrays
+* Pointers
+* Functions
+* String Handling
+* File Handling
+* Conditional Statements
+* Loops
+* Menu-driven Programming
+* Modular Programming
 
-## Room Types
-- AC
-- Non-AC
+## 👤 User Roles
 
-## Room Categories
-- Single
-- Duplex
+### Administrator
 
----
+The administrator can access the administrative functionality of the hotel management system.
 
-# 🤖 Automatic Room Allocation
+### Customer
 
-The system automatically allocates the lowest available room number in ascending order.
+Customers can:
 
-Example:
+* Create an account
+* Login to the system
+* Select room requirements
+* Choose between AC and Non-AC rooms
+* Choose between Single and Duplex rooms
+* Manage their booking information
 
-101 → 102 → 103 ...
+## 🏠 Room Management
 
-This avoids duplicate bookings and improves booking management.
+The application provides different room options based on:
 
----
+* **AC / Non-AC**
+* **Single / Duplex**
 
-# 💰 Billing System
+Room numbers are automatically assigned by the application.
 
-Bill is calculated based on:
-- Room Type
-- Room Category
-- Total Stay Duration
+## 💾 File Storage
 
-## Pricing Table
+The application uses files to maintain persistent information.
 
-| Room Type | Category | Price Per Day |
-|------------|-----------|----------------|
-| AC | Single | 2000 |
-| AC | Duplex | 3000 |
-| Non-AC | Single | 1000 |
-| Non-AC | Duplex | 1500 |
-
----
-
-# 📅 Date-Based Booking
-
-The project uses:
-- Check-In Date
-- Check-Out Date
-
-Total days are calculated automatically.
-
----
-
-# 🧠 Concepts Used
-
-- Structures
-- Arrays
-- Functions
-- File Handling
-- Header Files
-- String Handling
-- Authentication
-- Modular Programming
-
----
-
-# 📂 Project Structure
+Example files include:
 
 ```text
-Hotel_Hogwarts/
-│
-├── main.c
-├── hotel.c
-├── hotel.h
-├── file.c
-├── file.h
-│
-├── hotel.txt
-├── customer.txt
-└── README.md
-<<<<<<< HEAD
+hotel.txt
+customer.txt
 ```
 
-=======
->>>>>>> 162284e18f1a161b958b5008f9140b7e07f9e4c5
+This allows information to remain available between program executions.
+
+## ⚙️ How to Compile
+
+```bash
+gcc *.c
+```
+
+## ▶️ How to Run
+
+```bash
+./a.out
+```
+
+Follow the menu displayed by the application.
+
+## 📚 What I Learned
+
+Through this project, I gained practical experience with:
+
+* Designing a menu-driven C application
+* Using structures to manage application data
+* Implementing user signup and login
+* Managing different user roles
+* Working with files for persistent storage
+* Implementing room management logic
+* Organizing a larger C project into modules
+
+## 🎯 Key Skills
+
+**C Programming • Structures • File Handling • Authentication • Application Logic • Arrays • Pointers • Modular Programming**
